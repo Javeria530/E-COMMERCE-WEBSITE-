@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rose Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<section id="header">
+        <a href="home.html"><img src="images/lo.png" class="logo" style="width: 50px; height: auto;" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="shop.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="search.html"><i class="fa fa-search"></i></a></li>
+                <li>
+                    <a href="signup.html">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li id="close"><i class="fas fa-times"></i></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/img9.png" width="100%" id="mainimg" alt="Product Image" />
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/img9.png" width="100%" class="smallimg" alt="Product Image" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images/img9l1.png" width="100%" class="smallimg" alt="Product Image" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images/img9l2.png" width="100%" class="smallimg" alt="Product Image" />
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Maxies</h6>
+            <h4>Women's Fashion Maxies</h4>
+            <h2>$50.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="0" />
+            <button class="normal" onclick="addToCart('Stylish Maxies', 25, 'images/img9.png')">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>
+                Experience ultimate comfort and style with our Cotton Maxies. Made from premium quality cotton, these maxies feature elegant designs and breathable fabric, perfect for any season. Ideal for both casual and formal wear, they are a must-have in your wardrobe.
+            </span>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Upcoming New Items</h2>
+        <p>New Collection and Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="images/img11.png" alt="Product Image" />
+                <div class="des">
+                    <span>Rose Boutique</span>
+                    <h5>Stylish Maxies</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Price $25</h4>
+                </div>
+                <a href="cart.html" class="cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="images/img12.png" alt="Product Image" />
+                <div class="des">
+                    <span>Rose Boutique</span>
+                    <h5>Stylish Maxies</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Price $25</h4>
+                </div>
+                <a href="cart.html" class="cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="images/img13.png" alt="Product Image" />
+                <div class="des">
+                    <span>Rose Boutique</span>
+                    <h5>Stylish Maxies</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Price $25</h4>
+                </div>
+                <a href="cart.html" class="cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="images/img15.png" alt="Product Image" />
+                <div class="des">
+                    <span>Rose Boutique</span>
+                    <h5>Stylish Maxies</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Price $25</h4>
+                </div>
+                <a href="cart.html" class="cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><b>Email: </b>Nakhalsheikh4@gmail.com</p>
+                <p><b>Phone: </b>+123-456-7890</p>
+                <p><b>Address: </b>136 Lahore Road, Sheikhupura, Pakistan</p>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p><b>Rose Boutique</b> is a <b>formal clothing brand</b> dedicated to <b>quality fabrics</b> and <b>unique embroidery</b> for <b>modern, dynamic women</b>. We design each piece with <b>trendy looks</b> and <b>custom color palettes</b> to meet the needs of today's woman.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+       
+        var mainimg = document.getElementById("mainimg");
+
+        
+        var smallimgs = document.querySelectorAll(".small-img-col img");
+
+        
+        function changeImage(event) {
+            mainimg.src = event.target.src;
+        }
+
+       
+        smallimgs.forEach(function (img) {
+            img.addEventListener("click", changeImage);
+        });
+    </script>
+
+</body>
+</html>

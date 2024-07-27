@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up - Rose Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+     <section id="header">
+        <a href="home.html"><img src="images/lo.png" class="logo" style="width: 50px; height: auto;" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="shop.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="search.html"><i class="fa fa-search"></i></a></li>
+                <li>
+                    <a href="signup.html">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li id="close"><i class="fas fa-times"></i></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="signup">
+        <h2>Create an Account</h2>
+        <form action="signup_process.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </div>
+            <button type="submit" class="normal">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+
+    <script>
+        function validateForm() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
